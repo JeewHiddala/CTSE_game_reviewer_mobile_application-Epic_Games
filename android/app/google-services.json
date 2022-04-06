@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "542943186595",
+    "project_id": "test-88f56",
+    "storage_bucket": "test-88f56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542943186595:android:16523f2cbf72f95d07b916",
+        "android_client_info": {
+          "package_name": "com.example.game_reviewer_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542943186595-0n96tdu7n8fb32b3qtg95ro01k0uuq7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrbcF5JikKAii_CqGJ59SkNR7OO589vwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542943186595-0n96tdu7n8fb32b3qtg95ro01k0uuq7h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
