@@ -7,6 +7,7 @@ import 'package:game_reviewer_application/pages/update_review.dart';
 
 //Referred Coding Cafe To do list app in flutter & SQLite 6 th video for developing list view page.
 //Referred Flutter rating bar readme in the flutter pub.dev site to create rating bar indicator
+//Referred 2-ways-to-convert-datetime-to-time-ago-in-flutter in kindacode.com for displaying time elapsed of review creation
 class ReviewList extends StatefulWidget {
   static const String routeName = '/review';
 

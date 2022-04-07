@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 final CollectionReference _mainCollection = _firestore.collection('users');
 
+//Referred FlutterFire documentation in the flutter.dev site for developing CRUD operations
 class GamingEventsDatabase {
   static String? userId;
 

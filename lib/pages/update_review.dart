@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:game_reviewer_application/db/database_review.dart';
 
-
-
 class EditReview extends StatefulWidget {
 
   final String title;
