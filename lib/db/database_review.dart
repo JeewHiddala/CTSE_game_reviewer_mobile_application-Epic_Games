@@ -3,7 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 final CollectionReference _mainCollection = _firestore.collection('test');
 
-//Referred FlutterFire documentation in the flutter.dev site to develop CRUD operations
+//Referred FlutterFirebase documentation in the flutter.dev site to develop CRUD operations
 class ReviewDatabase {
   static String? gameId;
 
