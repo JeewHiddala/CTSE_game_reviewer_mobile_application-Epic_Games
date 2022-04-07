@@ -6,7 +6,7 @@ import 'package:game_reviewer_application/pages/review_list.dart';
 import 'collections/gamingEventsCollection.dart';
 import 'db/database_review.dart';
 
-
+//Referred Animation Splash Screen readme in the pub.dev site to develop this splash
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());

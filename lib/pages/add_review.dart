@@ -3,10 +3,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:game_reviewer_application/db/database_review.dart';
 import 'package:game_reviewer_application/pages/review_list.dart';
-
 import '../db/database_review.dart';
 
-
+//Referred Coding Cafe To do list app in flutter & SQLite 7 th video for developing insertion page.
+//Referred Flutter rating bar readme in the flutter pub.dev site to create rating bar
 class AddReview extends StatefulWidget {
   static const String routeName = '/addReview';
   const AddReview({ Key? key }) : super(key: key);

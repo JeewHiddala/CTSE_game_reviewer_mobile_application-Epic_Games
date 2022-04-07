@@ -5,6 +5,8 @@ import 'package:game_reviewer_application/db/database_review.dart';
 import 'package:game_reviewer_application/pages/add_review.dart';
 import 'package:game_reviewer_application/pages/update_review.dart';
 
+//Referred Coding Cafe To do list app in flutter & SQLite 6 th video for developing list view page.
+//Referred Flutter rating bar readme in the flutter pub.dev site to create rating bar indicator
 class ReviewList extends StatefulWidget {
   static const String routeName = '/review';
 

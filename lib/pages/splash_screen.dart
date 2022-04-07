@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:game_reviewer_application/pages/review_list.dart';
 import 'package:page_transition/page_transition.dart';
 
+//Referred Animation Splash Screen readme in the pub.dev site to develop this splash
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
-  static const String routeName = '/splash';
 
   @override
   Widget build(BuildContext context) {

@@ -5,6 +5,7 @@ import 'package:game_reviewer_application/screens/gamingEventsScreens/services/s
 import '../../collections/gamingEventsCollection.dart';
 import 'editGameEventScreen.dart';
 
+//Referred To do list app in flutter & SQLite 6 video to develop a list view page.
 class GameEventList extends StatelessWidget {
   const GameEventList({Key? key}) : super(key: key);
 

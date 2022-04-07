@@ -8,6 +8,7 @@ import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import '../../collections/gamingEventsCollection.dart';
 import '../../custom_form_field_gaming_events.dart';
 
+// Coding cafe - to do list app flutter & SQLite 7 video to develop insert page.
 class AddGameEventForm extends StatefulWidget {
   final FocusNode nameFocusNode;
   final FocusNode gameNameFocusNode;
