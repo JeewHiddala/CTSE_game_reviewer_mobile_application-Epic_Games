@@ -217,7 +217,7 @@ class _EditGameEventFormState extends State<EditGameEventForm> {
                       },
                       items: tournamentMode.map((tournamentMode) {
                         return DropdownMenuItem(
-                          child: Text('For $tournamentMode Persons'),
+                          child: Text(tournamentMode),
                           value: tournamentMode,
                         );
                       }).toList(),
