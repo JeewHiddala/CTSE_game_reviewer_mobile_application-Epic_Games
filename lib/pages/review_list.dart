@@ -62,7 +62,13 @@ class _ReviewListState extends State<ReviewList> {
                   _isDeleting = false;
                 });
 
-                Navigator.pop(context, 'OK');
+                // Navigator.pop(context, 'OK');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ReviewList(),
+                  ),
+                );
               },
             ),
             TextButton(
@@ -156,14 +162,20 @@ class _ReviewListState extends State<ReviewList> {
                   StreamBuilder<QuerySnapshot>(
                       stream: ReviewDatabase.readReviewInfo(),
                       builder: (context, snapshot) {
-                        if (snapshot.hasData || snapshot.data != null) {
-                          var result = snapshot.data!.docs
-                              .map((element) => element['rating'])
-                              .reduce((a, b) => a + b) /
-                              snapshot.data!.docs.length;
+                        count = snapshot.data?.docs.length??0;
+                        if (snapshot.hasError) {
+                          return const Text('Something went wrong');
+                        } else if (count != 0) {
+                          var result = 0.0;
+                          if(snapshot.hasData) {
+                            result = snapshot.data!.docs
+                                .map((element) => element['rating'])
+                                .reduce((a, b) => a + b) /
+                                snapshot.data!.docs.length;
+                          }
                           print(snapshot);
                           overallRating = result;
-                          count = snapshot.data!.docs.length;
+
                           return Expanded(
                             flex: 2,
                             child: Container(
@@ -225,9 +237,23 @@ class _ReviewListState extends State<ReviewList> {
                               ),
                             ),
                           );
-                        } else {
-                          return const Text('Something went wrong');
                         }
+                        else if(snapshot.connectionState == ConnectionState.waiting || !snapshot.hasData){
+                          return const Center(
+                            child: CircularProgressIndicator(
+                              valueColor: AlwaysStoppedAnimation<Color>(Colors.orangeAccent),
+                            ),
+                          );
+                        }
+                        return const Center(
+                            child: Text(
+                                'No reviews added yet',
+                              style: TextStyle(
+                                fontSize: 18.0,
+                                color: Colors.white,
+                              ),
+                            )
+                        );
                       }),
                   const Padding(
                     padding: EdgeInsets.only(top: 8.0),
@@ -405,7 +431,13 @@ class _ReviewListState extends State<ReviewList> {
                         );
                     }
                     return const Center(
-                      child: Text('No reviews added yet')
+                      child: Text(
+                        'No reviews added yet',
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          color: Colors.white,
+                        ),
+                      )
                     );
                   }),
             ),
