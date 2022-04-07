@@ -15,7 +15,7 @@ class AppBarTitle extends StatelessWidget {
       children: [
         const SizedBox(width: 8),
         const Text(
-          'Game Reviewer',
+          'Epic Game Reviewer',
           style: TextStyle(
             color: Colors.black,
             fontSize: 20,

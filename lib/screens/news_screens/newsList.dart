@@ -28,7 +28,7 @@ class NewsList extends StatelessWidget {
           title: const Padding(
             padding: EdgeInsets.only(left: 50.0, top: 5.0),
             child: Text(
-              'Epic Games',
+              'Epic Game Reviewer',
               style: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 25,

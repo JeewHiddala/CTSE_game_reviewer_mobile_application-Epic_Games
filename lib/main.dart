@@ -2,7 +2,6 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:game_reviewer_application/home.dart';
-import 'package:game_reviewer_application/pages/review_list.dart';
 import 'collections/gamingEventsCollection.dart';
 import 'db/database_review.dart';
 
@@ -35,7 +34,7 @@ class MyApp extends StatelessWidget {
         ReviewDatabase.gameId = "6OCSUsjJ1qQ5qmNJKDOW";
         GamingEventsDatabase.userId = "uTodvKrEdM8glyifJD1K";
         return MaterialApp(
-          title: 'Game Reviewer',
+          title: 'Epic Game Reviewer',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             primarySwatch: Colors.amber,
@@ -47,7 +46,7 @@ class MyApp extends StatelessWidget {
               splashTransition: SplashTransition.fadeTransition,
               // pageTransitionType: PageTransitionType.scale,
               backgroundColor: Colors.black,
-              nextScreen: ReviewList()),
+              nextScreen: Home()),
         );
       },
     );

@@ -58,7 +58,7 @@ class _AddReviewState extends State<AddReview> {
         title: const Padding(
           padding: EdgeInsets.only(left: 50.0, top: 5.0),
           child: Text(
-            'Game Reviewer',
+            'Epic Game Reviewer',
             style: TextStyle(
               fontWeight: FontWeight.w500,
               fontSize: 25,
